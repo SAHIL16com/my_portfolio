@@ -6,7 +6,7 @@ import Experience from './Experience/Experience.jsx'
 import Footer from './Footer/Footer.jsx'
 import Connect from './Connect/Connect.jsx'
 import Learning from './Learning/Learning.jsx'
-import Skills from './Projects/Skills.jsx'
+import Skills from './Skills/Skills.jsx'
 
 const App = () => {
   return (
