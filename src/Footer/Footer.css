@@ -50,7 +50,7 @@
 }
 
 .links a:hover {
-    color: #ffffff;
+    color: blue;
 }
 
 .links a:hover::after {

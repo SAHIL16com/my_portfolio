@@ -3,7 +3,7 @@ import './Connect.css'
 
 const Connect = () => {
     return (
-        <div className='connect'>
+        <div id='contact' className='connect'>
             <div className="right">
                 <div className="head">
                     <h2>Let's Build Something Amazing Together!</h2>
