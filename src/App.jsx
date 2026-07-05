@@ -8,10 +8,11 @@ import Connect from './Connect/Connect.jsx'
 import Learning from './Learning/Learning.jsx'
 import Skills from './Skills/Skills.jsx'
 import Projects from './Projects/Project.jsx'
-
+import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <div>
+      <Toaster/>
       <Navbar />
       <Hero/>
       <About/>

@@ -1,7 +1,33 @@
 import React from 'react'
 import './Connect.css'
+import { toast } from 'react-hot-toast';
+
 
 const Connect = () => {
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "e3af8b16-15b7-4976-971f-ed9d47bc84b2");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit",
+                {
+                    method: "POST",
+                    body: formData
+                });
+            const data = await response.json();
+            if (data.success) {
+                toast.success("Thankyou for your submission! ");
+                event.target.reset();
+            } else {
+                toast.error(data.message)
+            }
+        }
+        catch (error) {
+            toast.error(error.message);
+        }
+    }
     return (
         <div id='contact' className='connect'>
             <div className="right">
@@ -10,7 +36,7 @@ const Connect = () => {
                     <p>Feel free to reach out if you have any questions or would like to collaborate!</p>
                 </div>
                 <div className="form">
-                    <form autoComplete="on">
+                    <form onSubmit={onSubmit}  autoComplete="on">
                         <div className="input-group">
                             <label htmlFor="name">Full Name</label>
                             <input
