@@ -1,0 +1,122 @@
+.hero {
+    min-height: calc(100vh - 72px);
+    background: #fafaf9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 8%;
+}
+
+.my_field {
+    margin-bottom: 25px;
+}
+
+.field_name {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border: 1px solid #d6d3d1;
+    border-radius: 50px;
+    background: #ffffff;
+    color: #0f766e;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.field_name svg {
+    width: 18px;
+    height: 18px;
+}
+
+.hero_con {
+    max-width: 800px;
+}
+
+.hero_con h1:first-child {
+    font-size: 3.8rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.hero_con h1:nth-child(2) {
+    margin-top: 10px;
+    font-size: 2.7rem;
+    color: #0f766e;
+    font-weight: 700;
+}
+
+.hero_con h3 {
+    margin-top: 28px;
+    color: #57534e;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 18px;
+}
+
+.buttons button {
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact_me {
+    background: #0f766e;
+    color: white;
+    border: none;
+}
+
+.contact_me:hover {
+    background: #115e59;
+}
+
+.my_work {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d6d3d1;
+}
+
+.my_work:hover {
+    border-color: #0f766e;
+    color: #0f766e;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 0 24px;
+    }
+
+    .hero_con h1:first-child {
+        font-size: 2.7rem;
+    }
+
+    .hero_con h1:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .hero_con h3 {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
