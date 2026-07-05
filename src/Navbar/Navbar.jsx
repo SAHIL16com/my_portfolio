@@ -5,7 +5,7 @@ import { FolderKanban } from 'lucide-react';
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <div className="name">Sahil_Mishra Portfolio</div>
+        <div className="name">Sahil Mishra</div>
         <div className="links">
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
