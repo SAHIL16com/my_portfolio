@@ -7,6 +7,7 @@ import Footer from './Footer/Footer.jsx'
 import Connect from './Connect/Connect.jsx'
 import Learning from './Learning/Learning.jsx'
 import Skills from './Skills/Skills.jsx'
+import Projects from './Projects/Project.jsx'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Hero/>
       <About/>
       <Skills/>
+      <Projects/>
       <Experience/>
       <Learning/>
       <Connect/>

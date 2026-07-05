@@ -8,7 +8,7 @@ const Hero = () => {
                 <p className='field_name'> <Dot /> CS Student Engineer</p>
             </div>
             <div className="hero_con">
-                <h1>Hi, I'm Mishra</h1>
+                <h1>Hi, I'm Sahil Mishra</h1>
                 <h1>Frontend Developer & Student</h1>
                 <h3>I create modern, responsive, and user-friendly web applications using React, JavaScript, Tailwind CSS, and other modern web technologies.</h3>
             </div>
