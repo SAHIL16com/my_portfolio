@@ -4,25 +4,24 @@
 }
 
 .section_title {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     color: #1f2937;
     margin-bottom: 10px;
 }
 
 .section_line {
-    width: 70px;
-    height: 4px;
+    width: 60px;
+    height: 3px;
     background: #0f766e;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .section_description {
-    max-width: 650px;
+    max-width: 620px;
     color: #57534e;
-    line-height: 1.8;
-    font-size: 1rem;
-    margin-bottom: 50px;
+    line-height: 1.7;
+    margin-bottom: 45px;
 }
 
 .experience_container {
@@ -32,38 +31,43 @@
 
 .experience_card {
     width: 100%;
-    max-width: 900px;
-    background: #ffffff;
+    max-width: 760px;
+    background: #fff;
     border: 1px solid #e7e5e4;
-    border-radius: 18px;
+    border-radius: 14px;
+    transition: .3s ease;
+}
+
+.experience_card:hover {
+    border-color: #0f766e;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
 }
 
 .experience_content {
-    padding: 35px;
+    padding: 28px;
 }
 
 .experience_header {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 18px;
     flex-wrap: wrap;
 }
 
 .company_logo {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
     background: #0f766e;
     color: white;
-    border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo_text {
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .company_info {
@@ -71,123 +75,103 @@
 }
 
 .company_name {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.25rem;
     color: #1f2937;
+    font-weight: 600;
 }
 
 .job_role {
-    margin-top: 6px;
+    margin-top: 4px;
     color: #0f766e;
-    font-weight: 600;
+    font-size: .95rem;
 }
 
 .job_duration,
 .job_type {
-    margin-top: 10px;
+    margin-top: 6px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     color: #78716c;
-    font-size: 0.95rem;
+    font-size: .9rem;
 }
 
 .status_badge {
+    padding: 6px 14px;
+    border-radius: 30px;
     background: #ecfdf5;
     color: #15803d;
-    padding: 8px 16px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .experience_description {
-    margin-top: 30px;
+    margin-top: 24px;
     color: #57534e;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .skills_container {
-    margin-top: 35px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
 }
 
 .skill_card {
-    display: flex;
-    gap: 15px;
-
-    background: #f8f8f8;
-    border: 1px solid #ececec;
-    border-radius: 12px;
-
-    padding: 18px;
+    padding: 8px 14px;
+    border-radius: 25px;
+    background: #f5f5f4;
+    border: 1px solid #e7e5e4;
 }
 
-.skill_icon {
-    font-size: 1.5rem;
+.skill_icon,
+.skill_description {
+    display: none;
 }
 
 .skill_title {
-    font-weight: 600;
-    color: #1f2937;
-}
-
-.skill_description {
-    margin-top: 5px;
-    color: #78716c;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: .9rem;
+    color: #44403c;
+    font-weight: 500;
 }
 
 .technology_stack {
-    margin-top: 35px;
-
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
+    margin-top: 24px;
 }
 
 .tech_tag {
-    background: #f5f5f4;
-    border: 1px solid #e7e5e4;
-
-    padding: 8px 16px;
-    border-radius: 25px;
-
-    color: #44403c;
-    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #d6d3d1;
+    color: #57534e;
+    font-size: .85rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    #experience {
-        padding: 60px 24px;
+    #experience{
+        padding:70px 24px;
     }
 
-    .section_title {
-        font-size: 2rem;
+    .section_title{
+        font-size:2rem;
     }
 
-    .experience_content {
-        padding: 24px;
+    .experience_content{
+        padding:22px;
     }
 
-    .experience_header {
-        flex-direction: column;
+    .experience_header{
+        align-items:flex-start;
+        flex-direction:column;
     }
 
-    .status_badge {
-        align-self: flex-start;
-    }
-
-    .skills_container {
-        grid-template-columns: 1fr;
-    }
-
-    .company_name {
-        font-size: 1.2rem;
+    .status_badge{
+        align-self:flex-start;
     }
 }
