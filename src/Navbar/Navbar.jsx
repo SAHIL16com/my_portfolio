@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import { FolderKanban } from 'lucide-react';
 import { motion } from "motion/react";
+import { Download } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -26,6 +27,11 @@ const Navbar = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn" >
+          <Download size={18} />
+          Resume
+        </a>
+
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
