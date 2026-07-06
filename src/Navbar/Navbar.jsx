@@ -3,8 +3,9 @@ import './Navbar.css'
 import { FolderKanban } from 'lucide-react';
 import { motion } from "motion/react";
 import { Download } from "lucide-react";
-
-const Navbar = () => {
+import { Moon, Sun } from "lucide-react";
+import ThemeToggleBtn from '../ThemeToggleBtn/ThemeToggleBtn.jsx';
+const Navbar = ({ theme, setTheme }) => {
   return (
     <motion.div
       className='navbar'
@@ -28,16 +29,16 @@ const Navbar = () => {
         transition={{ delay: 0.3, duration: 0.5 }}
       >
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn" >
-          <Download size={18} />
-          Resume
+          <Download size={18} /> Resume
         </a>
-
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="#projects" aria-label="Projects">
           <FolderKanban size={20} />
         </a>
+        <ThemeToggleBtn theme={theme} setTheme={setTheme} />
+
       </motion.div>
     </motion.div>
   )

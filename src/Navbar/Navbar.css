@@ -53,7 +53,7 @@
 
 .links a {
     text-decoration: none;
-    color: #d1c8bc;
+    color: #44403c;
     font-size: 15px;
     font-weight: 500;
     position: relative;
@@ -91,6 +91,43 @@
 .links svg:hover {
     color: #0f766e;
     transform: translateY(-2px) scale(1.08);
+}
+
+.theme-toggle-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid #d6d3d1;
+    background: #ffffff;
+    color: #0f766e;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.28s ease;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.theme-toggle-btn:hover {
+    transform: translateY(-2px) rotate(10deg);
+    border-color: #0f766e;
+    box-shadow: 0 10px 24px rgba(15, 118, 110, 0.2);
+}
+
+.theme-toggle-btn:focus-visible {
+    outline: 2px solid #0f766e;
+    outline-offset: 2px;
+}
+
+html.dark .theme-toggle-btn {
+    background: #111827;
+    border-color: #374151;
+    color: #67e8f9;
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.5);
+}
+
+html.dark .theme-toggle-btn:hover {
+    border-color: #22d3ee;
+    box-shadow: 0 12px 28px rgba(34, 211, 238, 0.18);
 }
 
 @media (max-width: 768px) {

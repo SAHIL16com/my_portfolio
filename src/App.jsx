@@ -9,11 +9,24 @@ import Learning from './Learning/Learning.jsx'
 import Skills from './Skills/Skills.jsx'
 import Projects from './Projects/Project.jsx'
 import { Toaster } from "react-hot-toast";
+import { useEffect, useState } from "react";
 const App = () => {
+
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || savedTheme === 'light') return savedTheme;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   return (
     <div>
       <Toaster/>
-      <Navbar />
+      <Navbar theme={theme} setTheme={setTheme} />
       <Hero/>
       <About/>
       <Skills/>
