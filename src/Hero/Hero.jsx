@@ -43,8 +43,12 @@ const Hero = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
             >
-                <button className="contact_me">Contact Me</button>
-                <button className="my_work">My Work</button>
+                <a href="https://wa.me/919582352683?text=Hello%20Sahil,%20I%20want%20to%20contact%20you." target="_blank">
+                    <button className="contact_me">Contact Me</button>
+
+                </a>
+                <a href="#projects"><button className="my_work">My Work</button></a>
+                
             </motion.div>
         </motion.div>
     )
