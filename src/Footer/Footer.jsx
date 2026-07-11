@@ -20,7 +20,7 @@ const Footer = () => {
                 viewport={{ once: true }}
             >
                 <Copyright size={20} />
-                <p>2025 My Company. All rights reserved.</p>
+                <p>2026 Sahil Mishra. All rights reserved.</p>
             </motion.div>
 
             <motion.div

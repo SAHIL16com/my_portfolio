@@ -7,20 +7,27 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Light Mode Alternating Section Backgrounds */
+.hero, .skills, #experience, .connect {
+    background: #ffffff !important;
+}
+.about, .projects, .learning {
+    background: #fafaf9 !important;
+}
+
 html.dark body {
-    background-color :#070b14;
+    background-color :#030712;
     color: #e6edf6;
 }
 
-html.dark .navbar,
-html.dark .hero,
-html.dark .about,
-html.dark .skills,
-html.dark .projects,
-html.dark #experience,
-html.dark .learning,
-html.dark .connect {
-    background: #070b14;
+
+
+/* Dark Mode Alternating Section Backgrounds */
+html.dark .hero, html.dark .skills, html.dark #experience, html.dark .connect {
+    background: #030712 !important;
+}
+html.dark .about, html.dark .projects, html.dark .learning {
+    background: #080c14 !important;
 }
 
 html.dark .navbar {

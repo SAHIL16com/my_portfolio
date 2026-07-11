@@ -1,21 +1,22 @@
 .footer {
     width: 100%;
-    padding: 20px 8%;
-    margin-top: 30px;
+    padding: 30px 8%;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: transparent;
+    border-top: 1px solid #e2e8f0;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 .company {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #020c1d;
+    color: #cbd5e1;
     font-size: 0.95rem;
 }
 
@@ -31,7 +32,7 @@
 
 .links a {
     text-decoration: none;
-    color: #160c0c;
+    color: #94a3b8;
     font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -45,16 +46,37 @@
     bottom: -4px;
     width: 0%;
     height: 2px;
-    background: #60a5fa;
+    background: #38bdf8;
     transition: width 0.3s ease;
 }
 
 .links a:hover {
-    color: blue;
+    color: #38bdf8;
 }
 
 .links a:hover::after {
     width: 100%;
+}
+
+html.dark .footer {
+    background: #030712;
+    border-top: 1px solid #1f2937;
+}
+
+html.dark .company {
+    color: #9fb0cb;
+}
+
+html.dark .links a {
+    color: #9fb0cb;
+}
+
+html.dark .links a:hover {
+    color: #4fd1c5;
+}
+
+html.dark .links a::after {
+    background: #4fd1c5;
 }
 
 @media (max-width: 768px) {
@@ -62,7 +84,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 25px 20px;
+        padding: 30px 20px;
     }
 
     .company {
