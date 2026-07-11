@@ -1,7 +1,7 @@
 import React from 'react'
 import './Learning.css'
-import mern from '../assets/mern.jpg'
-import dsa from '../assets/dsa.jpg'
+import mern from '../assets/mern.png'
+import dsa from '../assets/dsa.png'
 import { motion } from "motion/react";
 
 const Learning = () => {

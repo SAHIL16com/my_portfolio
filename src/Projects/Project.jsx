@@ -108,7 +108,7 @@ const Project = () => {
                 {projectsData.map((project, index) => (
                     <motion.div
                         key={index}
-                        className={`project-card ${index % 2 === 1 ? 'reverse' : ''}`}
+                        className="project-card"
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
@@ -116,7 +116,7 @@ const Project = () => {
                     >
                         <motion.div
                             className="project-image"
-                            initial={{ x: index % 2 === 0 ? -60 : 60, opacity: 0 }}
+                            initial={{ x: -60, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.7 }}
                             viewport={{ once: true }}
@@ -126,7 +126,7 @@ const Project = () => {
 
                         <motion.div
                             className="project-content"
-                            initial={{ x: index % 2 === 0 ? 60 : -60, opacity: 0 }}
+                            initial={{ x: 60, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.7 }}
                             viewport={{ once: true }}

@@ -3,15 +3,14 @@ import "./Skills.css";
 import { motion } from "motion/react";
 
 const skills = {
-  Languages: ["HTML5", "CSS3", "JavaScript", "C", "Python"],
-  Frontend: ["React.js", "Tailwind CSS", "Responsive Design"],
+  Languages: ["HTML5", "CSS3", "JavaScript"],
+  Frontend: ["React.js", "Tailwind CSS"],
   Backend: ["Node.js", "Express.js"],
   Database: ["MongoDB"],
-  Tools: ["Git", "GitHub", "VS Code", "Postman", "Vercel"],
+  Tools: ["Git", "GitHub", "Postman", "Vercel"],
   "Currently Learning": [
     "Data Structures & Algorithms",
     "Next.js",
-    "TypeScript",
   ],
 };
 

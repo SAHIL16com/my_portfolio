@@ -120,3 +120,7 @@
         width: 100%;
     }
 }
+
+html.dark .hero_con h1:nth-child(2) {
+    color: #4fd1c5;
+}

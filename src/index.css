@@ -3,30 +3,43 @@ body {
     background: #fafaf9;
     color: #1f2937;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 /* Light Mode Alternating Section Backgrounds */
-.hero, .skills, #experience, .connect {
+.hero,
+.skills,
+#experience,
+.connect {
     background: #ffffff !important;
 }
-.about, .projects, .learning {
+
+.about,
+.projects,
+.learning {
     background: #fafaf9 !important;
 }
 
 html.dark body {
-    background-color :#030712;
+    background-color: #030712;
     color: #e6edf6;
 }
 
 
 
 /* Dark Mode Alternating Section Backgrounds */
-html.dark .hero, html.dark .skills, html.dark #experience, html.dark .connect {
+html.dark .hero,
+html.dark .skills,
+html.dark #experience,
+html.dark .connect {
     background: #030712 !important;
 }
-html.dark .about, html.dark .projects, html.dark .learning {
+
+html.dark .about,
+html.dark .projects,
+html.dark .learning {
     background: #080c14 !important;
 }
 

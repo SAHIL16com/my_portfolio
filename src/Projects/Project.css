@@ -275,8 +275,17 @@ html.dark .timer-countdown {
 
 @media(max-width:900px){
 
+.projects {
+    padding: 70px 24px !important;
+}
+
+.projects-container {
+    gap: 40px;
+}
+
 .project-card{
     grid-template-columns:1fr;
+    padding: 20px;
 }
 
 .project-card.reverse .project-image {
