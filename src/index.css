@@ -2,10 +2,12 @@ body {
     min-height: 100vh;
     background: #fafaf9;
     color: #1f2937;
+    touch-action: manipulation;
 }
 
 html {
     scroll-behavior: smooth;
+    touch-action: manipulation;
 }
 
 /* Light Mode Alternating Section Backgrounds */
